@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+\usepackage{graphicx}
+
+
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\newcommand{\cemph}{\it\color{Maroon}}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}{Tim {\Large CD} Lucas}\vspace{1.5em} % Your name
+
+\noindent{\color{Maroon}\spacedlowsmallcaps{Personal Information}}\vspace{0.5em} % Personal information heading
+
+%\NewEntry{}{\textit{Born in Canada,}}{05 September 1987} % Birthplace and date
+
+\NewEntry{email}{\includegraphics[height=8pt]{Ar_Icon_Contact} \href{mailto:timcdlucas@gmail.com}{timcdlucas{\small @}gmail.com}} % Email address
+
+\NewEntry{twitter}{\includegraphics[height=8pt]{Twitter_logo_blue-small.png} \href{http://www.twitter.com/timcdlucas}{{\small @}timcdlucas}  \href{http://www.twitter.com/statsforbios}{{\small @}statsforbios}} % Personal website
+
+\NewEntry{website}{\href{http://www.ucl.ac.uk/~ucbptcl}{www.ucl.ac.uk/{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}ucbptcl}} % Personal website
+
+\NewEntry{github}{\href{http://www.github.com/timcdlucas}{www.github.com/timcdlucas}} % Personal website
+
+
+
+\NewEntry{phone}{07415 863 536} % Phone number(s)
+
+\vspace{1em} % Extra white space between the personal information section and goal
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+{\color{Maroon}\spacedlowsmallcaps{Education}}\vspace{1em}
+
+\NewEntry{2012--present}{University College London, {\small CoMPLEX}}
+
+\Description{\MarginText{PhD}Thesis: \textit{Social structure and network epidemiology in bat zoonoses}\newline
+Description: I am using {\cemph complex networks} to study the epidemiology of bat-borne diseases. As bats carry a number of important {\cemph zoonotic diseases}, understanding the spread of these diseases within the bat population and how this affects spillover to humans and livestock is increasingly important. The unusually social nature of bat populations will strongly affect how diseases spread.\newline
+Advisors: Prof.~Kate \textsc{Jones} \& Dr~Hilde \textsc{Wilkinson-Herbot}}
+
+%------------------------------------------------
+
+\NewEntry{2011--2012}{University College London, {\small CoMPLEX}}
+
+\Description{\MarginText{MRes}\textit{Modelling Biological Complexity} $\cdotp$ {\bf Merit}\newline
+Description: This was part of a combined MRes/PhD Program. It is an interdisciplinary course applying {\cemph quantitative methods} to the life sciences. }
+
+%------------------------------------------------
+
+\NewEntry{2006--2010}{University of Sheffield, {\small Animal \& Plant Sciences}}
+
+\Description{\MarginText{MBioSci}\textit{Zoology} $\cdotp$ {\bf First}\newline
+Description: For my final project I used {\cemph wavelet} analysis to study multi-annual {\cemph cycles in malaria} incidence in Thailand.}
+
+%------------------------------------------------
+\vspace{1em} % Extra space between major sections
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\noindent{\color{Maroon}\spacedlowsmallcaps{Experience}}\vspace{1em}
+
+
+\NewEntry{Summer 2012}{Estimating abundances using acoustic data}
+
+\Description{\MarginText{Summer Project}I adapted `{\cemph ideal gas}' models to acoustic data. I applied the model using R to a pan-European bat survey. We have worked on this project further, validating results with simulations, and are now preparing a manuscript for publication.}
+
+%------------------------------------------------
+
+\NewEntry{May 2012}{Pair approximations in spatial biology}
+
+\Description{\MarginText{Case Presentation}I compared a number of moment closures for a {\cemph pair-approximation} model of tree population growth to lattice simulations written in Mathematica. [\href{http://files.figshare.com/92192/Pair_approximations_in_spatial_biology_Tim_Lucas_2012.pdf}{pdf}]}
+
+
+%------------------------------------------------
+
+\NewEntry{Dec. 2011}{Gaussian processes for bat identification}
+
+\Description{\MarginText{Case Presentation}I applied a novel {\cemph machine learning} method to a library of {\cemph bat calls} in Matlab. I compared the effectiveness of this method to standard machine learning methods applied in R. [\href{http://www.ucl.ac.uk/~ucbptcl/bat-gaussian-process-learning-tim-lucas-2011.pdf}{pdf}]}
+
+%------------------------------------------------
+
+\NewEntry{August 2011}{Smithsonian Tropical Research Institute}
+
+\Description{\MarginText{Volunteer Fieldwork}Two months fieldwork in Panam\'{a} on two projects: studying \emph{Anolis} dewlap evolution and studying gut length plasticity in Red-eyed tree frogs. }
+
+%------------------------------------------------
+\clearpage
+\NewEntry{May 2011}{Chilo\'{e} Silvestre, Chil\'{e}}
+
+\Description{\MarginText{Volunteer Fieldwork}I spent two weeks field work trapping Darwin's foxes in Chil\'{e} to collect samples for geophylogenetics.}
+
+%------------------------------------------------
+
+\NewEntry{August 2010}{University of Sheffield}
+
+\Description{\MarginText{Summer Internship}I studied the evolutionary response of plant communities to climate change with Dr Raj Whitlock. I collected, propagated and analysed plants collected from the field. }
+
+%------------------------------------------------
+
+\NewEntry{August 2009}{University of York, {\small YCCSA}}
+
+\Description{\MarginText{{\footnotesize TRANSIT} Internship}I studied collective foraging behaviour by programming a {\cemph complex 3{\footnotesize D} foraging} {\cemph simulation} in Java with Dr Jamie Wood and Dr John Pritchard at the York Centre for Complex Systems Analysis.}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+{\color{Maroon}\spacedlowsmallcaps{Publications}}\vspace{1em}
+
+%\Description{\MarginText{In prep.}{\bf Lucas TCD}, Moorcroft E, Freeman R, Rowcliffe MJ and Jones KE. \emph{A generalised random encounter model for estimating animal density with acoustic and camera data.}}
+
+\Description{\MarginText{2013}Walters CL, Collen A, {\bf Lucas TCD}, Mroz K, Sayer CA and Jones KE. (2013) Challenges of Using Bioacoustics to Globally Monitor Bats. in \emph{Bat Evolution, Ecology, and Conservation}. Springer New York. 479-499.}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+{\color{Maroon}\spacedlowsmallcaps{Computer Skills}}\vspace{1em}
+
+\Description{\MarginText{Languages}R (6 years), Python, Matlab, Mathematica, Java.}
+
+\Description{\MarginText{OS}Comfortable with Windows, Mac or Linux.}
+
+\Description{\MarginText{Other}Experience in Git/Github, unit testing, LaTeX, web design, markdown.}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+{\color{Maroon}\spacedlowsmallcaps{Other Information}}\vspace{1em}
+
+
+
+\Description{\MarginText{Meetings}2014\ \ $\cdotp$\ \ Poster at the {\footnotesize CoMPLEX} conference.}
+
+\vspace{-0.5em}
+
+\Description{2013\ \ $\cdotp$\ \ Presentation at BritBats 2 [\href{http://www.slideshare.net/timcdlucas/tim-lucasbritbats}{Slides}].}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2013\ \ $\cdotp$\ \ Invited attendance at \href{http://ecoviz.wordpress.com/1-joining-things-up-and-filling-the-gaps/}{eco{\footnotesize VIZ}} Tansley workshop.}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2013\ \ $\cdotp$\ \ Poster at the {\footnotesize CoMPLEX} conference and ID2 conference. [\href{http://figshare.com/articles/The_Phylogeography_of_Henipah_Virus/1046697}{pdf}]}
+
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\MarginText{Teaching}2013--2014\ \ $\cdotp$\ \ Online tutor for \href{http://sysmic.ac.uk/home.html}{{\footnotesize SYSMIC}}, a course for teaching quantitative skills to biologists.}
+
+
+%------------------------------------------------
+
+%\vspace{1em}
+
+%\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
+%\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
+
+%\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Mothertongue}
+
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+%\Description{\parbox{\langbox}{\textsc{Spanish}}\ \ $\cdotp$\ \ \ Basic but actively learning}
+
+%\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
+
+%------------------------------------------------
+
+\end{cv}
+
+\end{document}
