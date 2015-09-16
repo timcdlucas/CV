@@ -1,5 +1,10 @@
 # Talks
 
+2014-09-12
+National Bat Conference
+Random encounter models to estimate population sizes using bat detectors
+[slides](http://www.slideshare.net/timcdlucas/tim-lucasnbc)
+
 2014-10-23
 Seminar at CEH, Wallingford
 Estimating abundance from camera traps and acoustic sensors
@@ -20,6 +25,10 @@ A random encounter model for estimating bat abundances
 
 # Posters
 
+2015-09-14
+British Society of Parasitology Autumn Meeting
+Pathogen diversity and bat population structure
+
 2014-05-28
 [CoMPLEX Student Conference](http://www.ucl.ac.uk/complex/events/cumberland)
 Estimating abundance from camera traps and acoustic sensors
@@ -33,6 +42,12 @@ The Phylogeography of Henipah virus
 
 # Workshop
 
+2015-09-11
+Demonstrator at Zoon workshop
+
 2014-09-16
 Zoon user workshop. Short talk and co-lead of workshop 
+
+
+
 
