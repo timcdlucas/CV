@@ -1,5 +1,20 @@
 # Talks
 
+2015-12-15
+Tom August, Nick Golding, Tim Lucas, Dave Gavaghan, Nick Isaac, Bob O'Hara, Emiel van Loon, Greg McInerny
+The Zoön Project: Reproducible, Remixable and Shareable Species Distribution Modelling with R
+
+
+2015-12-09
+A comparative and computational study of population structure and pathogen richness in bats
+Presentation at Research in Progress, RSTMH.
+
+
+2015-12-03
+A comparative and computational study of population structure and pathogen richness in bats
+T.C.D. Lucas*, H.M. WilkinsonHerbots, K.E. Jones,
+Presentation at Epidemics5 conference.
+
 2014-09-12
 National Bat Conference
 Random encounter models to estimate population sizes using bat detectors
@@ -24,6 +39,11 @@ A random encounter model for estimating bat abundances
 
 
 # Posters
+
+2015-12-15
+Nick Golding, Tim Lucas, Tom August, Dave Gavaghan, Nick Isaac, Bob O'Hara, Emiel van Loon, Greg McInerny
+Simple, Shareable and Reproducible Species Distribution Modelling with the zoon R package
+
 
 2015-09-14
 British Society of Parasitology Autumn Meeting
