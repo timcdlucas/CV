@@ -28,6 +28,7 @@
 \usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
 \usepackage{graphicx}
 
+\usepackage{multicol}
 
 
 \renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
@@ -81,7 +82,7 @@
 
 \NewEntry{2016--present}{CBER Programmer}
 
-\Description{\MarginText{Research Programmer}I am currently the stuff programmer for the Centre of Biodiversity and Environment Research at UCL. I work on two main projects. I am working with the \href{http://www.madingleymodel.org/}{Madingley Model}---an ecological model of all life, written in C\#. My primary task is to get this model running on the {\cemph high performance cluster} at UCL. Secondly, I am translating code from {\cemph Mathematica to R} that performs statistical analyses for measurements of 3D objects used in {\cemph paleontological research}. I also provide technical support for the rest of the department.}
+\Description{\MarginText{Research Programmer}I am currently the stuff programmer for the Centre of Biodiversity and Environment Research at UCL. I work on two main projects. I am working with the \href{http://www.madingleymodel.org/}{Madingley Model}---an ecological model of all life, written in C\#. My primary task is to enable this model to run on the {\cemph high performance cluster} at UCL. Secondly, I am translating code from {\cemph Mathematica to R} that performs statistical analyses for measurements of 3D objects used in {\cemph paleontological research}. I also provide technical support for the rest of the department.}
 
 %------------------------------------------------
 
@@ -98,14 +99,33 @@
 
 \Description{\MarginText{PhD}\textit{Social structure and network epidemiology in bat zoonoses}\newline
 Description: I am using {\cemph complex networks} to study the epidemiology of bat-borne diseases. As bats carry a number of important {\cemph zoonotic diseases}, understanding the spread of these diseases within the bat population and how this affects spillover to humans and livestock is increasingly important. The unusually social nature of bat populations will strongly affect how diseases spread.\newline
-Supervisors: Prof.~Kate \textsc{Jones} \& Dr~Hilde \textsc{Wilkinson-Herbots}}
+Supervisors: \textsc{Prof.~Kate Jones} \& \textsc{Dr~Hilde Wilkinson-Herbots}}
 
 %------------------------------------------------
 
 \NewEntry{2011--2012}{University College London, {\small CoMPLEX}}
 
 \Description{\MarginText{MRes}\textit{Modelling Biological Complexity} $\cdotp$ {\bf Merit}\newline
-Description: This was part of a combined MRes/PhD program. It was an interdisciplinary course applying {\cemph quantitative methods} to the life sciences. }
+Description: Projects included adapting `{\cemph ideal gas}' models to acoustic data, analysing moment closures for a {\cemph pair-approximation} model of plant ecology and applying a novel {\cemph machine learning} method to a library of bat calls. }
+
+
+%\NewEntry{Summer 2012}{Estimating abundances using acoustic data}
+
+%\Description{\MarginText{Summer Project}I adapted `{\cemph ideal gas}' models to acoustic data. I applied the model using R to a pan-European bat survey. We have worked on this project further, validating results with simulations, and the work is now published.}
+
+%------------------------------------------------
+
+%\NewEntry{May 2012}{Pair approximations in spatial biology}
+
+%\Description{\MarginText{Case Presentation}I compared a number of moment closures for a {\cemph pair-approximation} model of tree population growth to lattice simulations written in Mathematica. [\href{http://files.figshare.com/92192/Pair_approximations_in_spatial_biology_Tim_Lucas_2012.pdf}{pdf}]}
+
+
+%------------------------------------------------
+
+%\NewEntry{Dec. 2011}{Gaussian processes for bat identification}
+
+%\Description{\MarginText{Case Presentation}I applied a novel {\cemph machine learning} method to a library of {\cemph bat calls} in Matlab. I compared the effectiveness of this method to standard machine learning methods applied in R. [\href{http://www.ucl.ac.uk/~ucbptcl/bat-gaussian-process-learning-tim-lucas-2011.pdf}{pdf}]}
+
 
 %------------------------------------------------
 
@@ -122,7 +142,7 @@ Description: For my final project I used {\cemph wavelet} analysis to study mult
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\noindent{\color{Maroon}\spacedlowsmallcaps{Research Experience}}\vspace{1em}
+\noindent{\color{Maroon}\spacedlowsmallcaps{Previous Appointments}}\vspace{1em}
 
 
 
@@ -132,23 +152,6 @@ Description: For my final project I used {\cemph wavelet} analysis to study mult
 \NewEntry{Autumn 2014}{Zo\"{o}n: An R package for reproducible SDMs}
 
 \Description{\MarginText{Internship}I wrote the first version of an R package for {\cemph reproducible} species distribution modelling. The package uses an online repository of user submitted `modules' to allow the software to keep up with this fast moving field and allow analyses to be completely reproducible. [\href{http://www.github.com/zoonproject/zoon}{Github}]}
-
-\NewEntry{Summer 2012}{Estimating abundances using acoustic data}
-
-\Description{\MarginText{Summer Project}I adapted `{\cemph ideal gas}' models to acoustic data. I applied the model using R to a pan-European bat survey. We have worked on this project further, validating results with simulations, and the work is now published.}
-
-%------------------------------------------------
-
-\NewEntry{May 2012}{Pair approximations in spatial biology}
-
-\Description{\MarginText{Case Presentation}I compared a number of moment closures for a {\cemph pair-approximation} model of tree population growth to lattice simulations written in Mathematica. [\href{http://files.figshare.com/92192/Pair_approximations_in_spatial_biology_Tim_Lucas_2012.pdf}{pdf}]}
-
-
-%------------------------------------------------
-
-\NewEntry{Dec. 2011}{Gaussian processes for bat identification}
-
-\Description{\MarginText{Case Presentation}I applied a novel {\cemph machine learning} method to a library of {\cemph bat calls} in Matlab. I compared the effectiveness of this method to standard machine learning methods applied in R. [\href{http://www.ucl.ac.uk/~ucbptcl/bat-gaussian-process-learning-tim-lucas-2011.pdf}{pdf}]}
 
 %------------------------------------------------
 
@@ -172,44 +175,20 @@ Description: For my final project I used {\cemph wavelet} analysis to study mult
 
 \NewEntry{August 2009}{University of York, {\small YCCSA}}
 
-\Description{\MarginText{{\footnotesize TRANSIT} Internship}I studied collective foraging behaviour by programming a {\cemph complex 3{\footnotesize D} foraging} {\cemph simulation} in Java and running simulations on a cluster at the York Centre for Complex Systems Analysis.}
+\Description{\MarginText{{\footnotesize TRANSIT} Internship}I studied collective foraging behaviour by programming a {\cemph complex 3{\footnotesize D} foraging} {\cemph model} in Java and running simulations on a cluster at the York Centre for Complex Systems Analysis.}
 
 %------------------------------------------------
 
 \vspace{2em} % Extra space between major sections
+{\color{Maroon}\spacedlowsmallcaps{Other Appointments and Affiliations}}\vspace{1em}
 
+\Description{\MarginText{Peer Review}\emph{Journals Reviewed for:}}
 
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
 
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-{\color{Maroon}\spacedlowsmallcaps{Publications}}\vspace{1em}
+\Description{\ \ $\cdotp$\ \ Methods in Ecology and Evolution, National Academy Science Letters}
 
-
-\Description{\MarginText{2016}{\bf Lucas TCD}, Wilkinson-Herbots HM, \& Jones KE. \emph{A comparative and computational study of population structure and pathogen richness in bats.} In prep.}
-
-\Description{\MarginText{2015}{\bf Lucas TCD}\textsuperscript{$\ast$}, Moorcroft EA\textsuperscript{$\ast$}, Freeman R, Rowcliffe MJ \& Jones KE. (2015) \emph{A generalised random encounter model for estimating animal density with remote sensor data.} Methods in Ecology and Evolution. doi: 10.1111/2041-210X.12346 [\href{http://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12346/epdf}{pdf}]}
-
-\Description{\MarginText{2013}Walters CL, Collen A, {\bf Lucas TCD}, Mroz K, Sayer CA and Jones KE. (2013) Challenges of Using Bioacoustics to Globally Monitor Bats. in \emph{Bat Evolution, Ecology, and Conservation.} Springer New York. 479-499.}
-
-\Description{\MarginText{} \scriptsize{ $\ast$ Co-first authors. } }
-
-%------------------------------------------------
-
-\vspace{1em} % Extra space between major sections
-
-
-%----------------------------------------------------------------------------------------
-%	Software
-%----------------------------------------------------------------------------------------
-
-{\color{Maroon}\spacedlowsmallcaps{Software}}\vspace{1em}
-
-
-\Description{\MarginText{On CRAN}{\bf Tim Lucas}, Nick Golding, Tom August, Greg McInerny, Emiel van Loon (2015) \emph{Zo\"{o}n: Reproducible, Accessible \& Shareable Species Distribution Modelling}. \url{www.github.com/zoonproject/zoon}}
-
-\Description{{\bf Tim Lucas} (2015) \emph{palettetown: Use Pokemon Inspired Colour Palettes} \url{www.github.com/timcdlucas/palettetown}}
-
+\Description{\MarginText{Society Membership}2014--present\ \ $\cdotp$\ \ Royal Society of Tropical Medicine and Hygiene: Student member}
 
 
 %------------------------------------------------
@@ -222,24 +201,24 @@ Description: For my final project I used {\cemph wavelet} analysis to study mult
 
 {\color{Maroon}\spacedlowsmallcaps{Conferences}}\vspace{1em}
 
-\Description{\MarginText{Meetings 2015}\emph{The Zo\"{o}n Project: Reproducible, Remixable and Shareable Species Distribution Modelling with R.}}\vspace{-1em}
-\MoreDescription{Presentation at \href{http://www.britishecologicalsociety.org/events/current_future_meetings/past-bes-annual-meetings/2015-annual-meeting/}{BES Annual Meeting} by T. August, N. Golding, \textbf{T. Lucas}, D. Gavaghan, N. Isaac, B. O'Hara, E. van Loon \& G. McInerny  }
+\Description{\MarginText{2015}\emph{The Zo\"{o}n Project: Reproducible, Remixable and Shareable Species Distribution Modelling with R.}}\vspace{-1em}
+\MoreDescription{Presentation at \href{http://www.britishecologicalsociety.org/events/current_future_meetings/past-bes-annual-meetings/2015-annual-meeting/}{BES Annual Meeting} by August T, Golding N, \textbf{Lucas TCD}, Gavaghan D, Isaac N, O'Hara B, van Loon E \& McInerny G }
 
 \vspace{-0.5em}
 
 
 \Description{\emph{Simple, Shareable and Reproducible Species Distribution Modelling with the Zo\"{o}n R package.}}\vspace{-1em}
-\MoreDescription{Poster at \href{http://www.britishecologicalsociety.org/events/current_future_meetings/past-bes-annual-meetings/2015-annual-meeting/}{BES Annual Meeting} by N. Golding, \textbf{T. Lucas}, T. August, D. Gavaghan, N. Isaac, B. O'Hara, E. van Loon \& Greg McInerny  }
+\MoreDescription{Poster at \href{http://www.britishecologicalsociety.org/events/current_future_meetings/past-bes-annual-meetings/2015-annual-meeting/}{BES Annual Meeting} by N Golding, \textbf{Lucas TCD}, August T, Gavaghan D, Isaac N, O'Hara B, van Loon E \& McInerny G}
 
 \vspace{-0.5em}
 
 \Description{\emph{Comparative and computational studies of pathogen richness in bats.}}\vspace{-1em}
-\MoreDescription{Presentation at Research in Progress, \href{https://rstmh.org/events/research-progress-2015}{RSTMH} by \textbf{T. Lucas}, H. Wilkinson-Herbots \& K. Jones.}
+\MoreDescription{Presentation at Research in Progress, \href{https://rstmh.org/events/research-progress-2015}{RSTMH} by \textbf{Lucas TCD}, Wilkinson-Herbots H \& Jones KE.}
 
 \vspace{-0.5em}
 
 \Description{\emph{A comparative and computational study of population structure and pathogen richness in bats.}}\vspace{-1em}
-\MoreDescription{Presentation at \href{http://www.epidemics.elsevier.com/}{Epidemics5} conference by \textbf{T. Lucas}, H. Wilkinson-Herbots \& K. Jones.}
+\MoreDescription{Presentation at \href{http://www.epidemics.elsevier.com/}{Epidemics5} conference by \textbf{Lucas TCD}, Wilkinson-Herbots H \& Jones KE.}
 
 \vspace{-0.5em}
 
@@ -278,21 +257,50 @@ Description: For my final project I used {\cemph wavelet} analysis to study mult
 
 \Description{Poster at the {\footnotesize CoMPLEX} conference and id2 conference. [\href{http://figshare.com/articles/The_Phylogeography_of_Henipah_Virus/1046697}{pdf}]}
 
-\Description{\MarginText{Teaching}2015\ \ $\cdotp$\ \ Demonstrator for reproducible species distribution modelling workshop run by Quantitative Ecology special interest group at BES.}
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+{\color{Maroon}\spacedlowsmallcaps{Publications}}\vspace{1em}
+
+
+\Description{\MarginText{2016}{\bf Lucas TCD}, Wilkinson-Herbots HM, \& Jones KE. \emph{A comparative and computational study of population structure and pathogen richness in bats.} In prep.}
+
+\Description{\MarginText{2015}{\bf Lucas TCD}\textsuperscript{$\ast$}, Moorcroft EA\textsuperscript{$\ast$}, Freeman R, Rowcliffe MJ \& Jones KE. (2015) \emph{A generalised random encounter model for estimating animal density with remote sensor data.} Methods in Ecology and Evolution. doi: 10.1111/2041-210X.12346 [\href{http://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12346/epdf}{pdf}]}
+
+\Description{\MarginText{2013}Walters CL, Collen A, {\bf Lucas TCD}, Mroz K, Sayer CA and Jones KE. (2013) Challenges of Using Bioacoustics to Globally Monitor Bats. in \emph{Bat Evolution, Ecology, and Conservation.} Springer New York. 479-499.}
+
+\Description{\MarginText{} \scriptsize{ $\ast$ Co-first authors. } }
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+
+%----------------------------------------------------------------------------------------
+%	Software
+%----------------------------------------------------------------------------------------
+
+{\color{Maroon}\spacedlowsmallcaps{Software}}\vspace{1em}
+
+
+\Description{\MarginText{On CRAN}{\bf Lucas TCD}, Golding N, August T, McInerny G, van Loon E (2015) \emph{Zo\"{o}n: Reproducible, Accessible \& Shareable Species Distribution Modelling}. \url{www.github.com/zoonproject/zoon}}
+
+\Description{{\bf Lucas TCD} (2015) \emph{palettetown: Use Pokemon Inspired Colour Palettes} \url{www.github.com/timcdlucas/palettetown}}
+
+
+\vspace{1em} % Extra space between major sections
+
+{\color{Maroon}\spacedlowsmallcaps{Teaching}}\vspace{1em}
+
+\Description{2015\ \ $\cdotp$\ \ Demonstrator for reproducible species distribution modelling workshop run by Quantitative Ecology special interest group at BES.}
 \vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
 
 \Description{2013--2014\ \ $\cdotp$\ \ Online tutor for \href{http://sysmic.ac.uk/home.html}{{\footnotesize SysMIC}}, a course for teaching quantitative skills to biologists.}
 
-\Description{\MarginText{Peer Review}\emph{Journals Reviewed for:}}
-
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-
-\Description{\ \ $\cdotp$\ \ Methods in Ecology and Evolution, National Academy Science Letter}
-
-
-
-%------------------------------------------------
-
+\vspace{1em} % Extra space between major sections
 
 
 %----------------------------------------------------------------------------------------
@@ -306,6 +314,54 @@ Description: For my final project I used {\cemph wavelet} analysis to study mult
 \Description{\MarginText{OS}Comfortable with Windows, Mac or Linux.}
 
 \Description{\MarginText{Other}Experience in Git/Github, unit testing, LaTeX, web design, markdown, R package development, shell/ssh and high performance computing.}
+
+
+
+\vspace{1em} % Extra space between major sections
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+{\color{Maroon}\spacedlowsmallcaps{Referees}}\vspace{-1em}
+
+\begin{multicols}{2}
+\begin{footnotesize}
+\textsc{Prof. Kate Jones}\newline
+Chair of Ecology and Biodiversity\newline
+Centre for Biodiversity and Environment Research\newline
+University College London\newline
+Gower Street\newline
+London\newline
+United Kingdom\newline
+{\scriptsize WC}1{\scriptsize E} \ 6{\scriptsize BT}
+
+\vfill
+\columnbreak
+\textsc{Dr Greg McInerny}\newline
+Centre for Interdisciplinary Methodologies\newline
+University of Warwick\newline
+Coventry\newline
+United Kingdom\newline
+{\scriptsize CV}4 \ {\scriptsize 7AL}
+
+\end{footnotesize}
+\end{multicols}
+\vspace{-0.5cm}
+\begin{multicols}{2}
+\begin{footnotesize}
+Email: \href{mailto:kate.e.jones@ucl.ac.uk}{kate.e.jones{\scriptsize @}ucl.ac.uk}\newline
+Tel: +44 (0)20 31084230
+\columnbreak
+
+Email: \href{mailto:g.mcinerny@warwick.ac.uk}{G.McInerny{\scriptsize @}warwick.ac.uk}\vspace{-0.8mm}\newline
+Tel: +44 (0)2476 574710
+\end{footnotesize}
+\end{multicols}
+
+
+
 
 \end{cv}
 
