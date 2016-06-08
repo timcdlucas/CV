@@ -1,9 +1,13 @@
 # Talks
 
+2016-06-07
+Using gas models to model camera trap and acoustic sensor surveys
+Presentation at Statistical Ecology Research Festival, University of Kent
+
 2015-12-15
 Tom August, Nick Golding, Tim Lucas, Dave Gavaghan, Nick Isaac, Bob O'Hara, Emiel van Loon, Greg McInerny
 The Zoön Project: Reproducible, Remixable and Shareable Species Distribution Modelling with R
-
+British Ecological Society Annual Meeting
 
 2015-12-09
 A comparative and computational study of population structure and pathogen richness in bats
